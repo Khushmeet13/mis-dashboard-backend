@@ -13,7 +13,7 @@ router.get("/today-logs-status", async (req, res) => {
         const date = new Date();
         const year = date.getFullYear().toString().slice(2);
         const month = date.toLocaleString('default', { month: 'short' }).toLowerCase();
-        const tableName = `tbl_pm_promotions_logs_${month}${year}`;
+        const tableName = `tbl_pm_promotions_logs_may25`;
 
         const query1 = `
             SELECT source FROM ${tableName} 
@@ -46,7 +46,7 @@ router.get("/today-logs-status", async (req, res) => {
 
 router.get("/statistics", async (req, res) => {
     try {
-        const client = req.query.client || "";
+        const client = req.query.client || "Club Mahindra Dentsu";
         const today = new Date().toISOString().split("T")[0];
         const date = new Date();
         const year = date.getFullYear().toString().slice(2);
@@ -63,7 +63,7 @@ router.get("/statistics", async (req, res) => {
             }
         }
 
-        const tableName = `tbl_sms_promotional_logs_${formattedSenderName}_${month}${year}`;
+        const tableName = `tbl_sms_promotional_logs_${formattedSenderName}_may25`;
 
         const query = `
         SELECT 
@@ -94,7 +94,7 @@ router.get("/statistics", async (req, res) => {
 
 router.get("/performance-analytics", async (req, res) => {
     try {
-        const client = req.query.client || "";
+        const client = req.query.client || "Club Mahindra Dentsu";
         const today = new Date().toISOString().split("T")[0];
         const date = new Date();
         const year = date.getFullYear().toString().slice(2);
@@ -111,7 +111,7 @@ router.get("/performance-analytics", async (req, res) => {
             }
         }
 
-        const tableName = `tbl_sms_promotional_logs_${formattedSenderName}_${month}${year}`;
+        const tableName = `tbl_sms_promotional_logs_${formattedSenderName}_may25`;
         const query1 = `
             SELECT count(status) as count, circle 
             FROM ${tableName} 
@@ -178,7 +178,7 @@ router.get("/performance-analytics", async (req, res) => {
 
 router.get("/critical-data", async (req, res) => {
     try {
-        const client = req.query.client || "";
+        const client = req.query.client || "Club Mahindra Dentsu";
         const today = new Date().toISOString().split("T")[0];
         const yesterday = new Date(Date.now() - 86400000).toISOString().split("T")[0];
         const date = new Date();
@@ -197,7 +197,7 @@ router.get("/critical-data", async (req, res) => {
             }
         }
 
-        const tableName = `${formattedSenderName}_rcs_sms_cmp_done_${month}${year}`;
+        const tableName = `${formattedSenderName}_rcs_sms_cmp_done_may25`;
 
         const query = `
             SELECT 
