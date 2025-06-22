@@ -1,0 +1,159 @@
+-------------clicked upload button-------------
+
+
+--------------dummy table creation--------------
+CREATE TABLE IF NOT EXISTS  dummy_CM_LB_24_04_2025_02 (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        client varchar(80),
+        product varchar(80),
+        base varchar(50),
+        circle varchar(30),
+        vendor varchar(15),
+        channel varchar(10)
+      );
+
+
+
+----------------dummy table insertion-------
+INSERT INTO  dummy_CM_LB_24_04_2025_02 
+(transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, client, product, base, circle, vendor, channel) 
+VALUES ?
+
+
+-------------update circle query on dummy table----------
+update PM_AR.dummy_CM_LB_24_04_2025_02 as base , PM_AR.region_all  as regin set  base.circle=regin.circle where substr(base.mobileNo,3,4)=regin.series
+
+
+
+------------log table creation-------------
+CREATE TABLE IF NOT EXISTS tbl_sms_promotional_logs_clubm_apr25 (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        product varchar(80)
+      )
+
+
+-----------log table insertion-------------
+INSERT INTO tbl_sms_promotional_logs_clubm_apr25 (transaction_id, message_id, mobileNo, sender, text, 
+type, length, cost, status, cause, channel_name, submit_time, 
+delivered_time, ip, entity_id, template_id, source, product)
+SELECT transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, product 
+FROM dummy_CM_LB_24_04_2025_02 dt
+WHERE NOT EXISTS (
+    SELECT 1 FROM tbl_sms_promotional_logs_clubm_apr25 ft 
+    WHERE ft.source = dt.source 
+    LIMIT 1
+)
+
+
+
+-----------dnd table creation--------------
+CREATE TABLE IF NOT EXISTS dnd_clubm (
+        mobileNo VARCHAR(12),
+        status VARCHAR(50),
+        date varchar(30)
+);
+
+
+
+------------dnd table insertion----------
+INSERT INTO dnd_clubm (mobileNo, status, date)
+SELECT mobileNo, cause, submit_time
+FROM dummy_CM_LB_24_04_2025_02 
+WHERE cause LIKE '%blocked in preferences with msisdn as pk.%' 
+OR cause LIKE '%reserved for preference%' OR cause LIKE '%NCPR Fail%'
+
+
+
+--------------product table creation-------
+CREATE TABLE IF NOT EXISTS clubm_mumbi_rcs_sms_cmp_done_apr25 (
+        mobileNo VARCHAR(12),
+        status varchar(15),
+        date VARCHAR(20),
+        channel varchar(10),
+        sender varchar(10),
+        circle varchar(30),
+        vendor varchar(15),
+        source varchar(50),
+        base varchar(50),
+        product varchar(80),
+        client varchar(80),
+        cause varchar(60)  
+    ) ;
+
+
+---------------product table insertion-------------
+INSERT INTO clubm_mumbi_rcs_sms_cmp_done_apr25 (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+FROM dummy_CM_LB_24_04_2025_02  dt
+WHERE NOT EXISTS (
+    SELECT 1 FROM clubm_mumbi_rcs_sms_cmp_done_apr25 ft 
+    WHERE ft.source = dt.source 
+    LIMIT 1
+);
+
+
+
+-------------final table creation---------
+CREATE TABLE IF NOT EXISTS tbl_pm_promotions_logs_apr25  (
+        mobileNo VARCHAR(12),
+        circle varchar(30),
+        vendor varchar(15),
+        status varchar(15),
+        product varchar(80),
+        date VARCHAR(50),
+        source varchar(50),
+        channel varchar(10),
+        cause varchar(60),
+        sender varchar(10),
+        client varchar(80)  
+    ) ;
+
+
+
+------------final table insertion-----------
+INSERT INTO tbl_pm_promotions_logs_apr25 (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+FROM dummy_CM_LB_24_04_2025_02  dt
+WHERE NOT EXISTS (
+    SELECT 1 FROM tbl_pm_promotions_logs_apr25 ft 
+    WHERE ft.source = dt.source 
+    LIMIT 1
+);
+
+
+-----------drop dummy table------------
+DROP TABLE IF EXISTS dummyTableName;
+
+

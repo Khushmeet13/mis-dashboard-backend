@@ -1,0 +1,818 @@
+[2025-05-12T05:21:03.530Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T05:21:03.538Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T05:21:24.393Z] transactionId: 8139014518858532050
+[2025-05-12T05:21:24.435Z] Dummy table create query: 
+      CREATE TABLE IF NOT EXISTS  `dummy_CM_LB_23_04_2025_1930` (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        client varchar(80),
+        product varchar(80),
+        base varchar(50),
+        circle varchar(30),
+        vendor varchar(15),
+        channel varchar(10)
+      )
+[2025-05-12T05:21:24.542Z] Log table name after creation: tbl_sms_promotional_logs_ClubM_apr25
+[2025-05-12T05:21:24.557Z] DND table name after creation: dnd_ClubM
+[2025-05-12T05:21:24.579Z] Product table Name after creation: ClubM_Mumbi_rcs_sms_cmp_done_apr25
+[2025-05-12T05:21:24.597Z] Final Table created: tbl_pm_promotions_logs_apr25
+[2025-05-12T05:21:24.656Z] Index added on column: mobileNo
+[2025-05-12T05:21:24.683Z] Index added on column: source
+[2025-05-12T05:21:24.696Z] Index added on column: vendor
+[2025-05-12T05:21:24.713Z] Index added on column: product
+[2025-05-12T05:21:24.728Z] Index added on column: channel
+[2025-05-12T05:21:24.749Z] Index added on column: client
+[2025-05-12T05:21:24.758Z] All values: 8139014518858532050,MgQQXSoPXMhVVSR,918902444879,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,34,34,UI,Tue Apr 01 2025 11:34:18 GMT+0530 (India Standard Time),Tue Apr 01 2025 12:34:32 GMT+0530 (India Standard Time),,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms,8139014518858532050,MgQQXSoPXMhVVST,918902444878,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,0,0,UI,Tue Apr 01 2025 11:34:18 GMT+0530 (India Standard Time),Tue Apr 01 2025 12:34:32 GMT+0530 (India Standard Time),,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms,8139014518858532050,MgQQXSoPXMhVVSU,918902444877,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,21,21,UI,Tue Apr 01 2025 11:34:18 GMT+0530 (India Standard Time),Tue Apr 01 2025 12:34:32 GMT+0530 (India Standard Time),,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms,8139014518858532050,MgQQXSoPXMhVVSP,918902444876,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,652,652,UI,Tue Apr 01 2025 11:34:18 GMT+0530 (India Standard Time),Tue Apr 01 2025 12:34:32 GMT+0530 (India Standard Time),,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms,8139014518858532050,MgQQXSoPXMhVVSO,918902444875,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,30,30,UI,Tue Apr 01 2025 11:34:18 GMT+0530 (India Standard Time),Tue Apr 01 2025 12:34:32 GMT+0530 (India Standard Time),,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms
+[2025-05-12T05:21:24.766Z] Data inserted into dummy table successfully: 
+      INSERT INTO  `dummy_CM_LB_23_04_2025_1930` 
+      (transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, client, product, base, circle, vendor, channel) 
+      VALUES ?
+    
+[2025-05-12T05:21:24.767Z] Update Query:  
+        update `sgc_msg_log`.`dummy_CM_LB_23_04_2025_1930` as base , `sgc_msg_log`.region_all  as regin set  base.circle=regin.circle where substr(base.mobileNo,3,4)=regin.series
+    
+[2025-05-12T05:21:24.781Z] Batch update result: {"fieldCount":0,"affectedRows":5,"insertId":0,"info":"Rows matched: 5  Changed: 5  Warnings: 0","serverStatus":34,"warningStatus":0,"changedRows":5}
+[2025-05-12T05:21:24.786Z] Log table insert query: 
+        INSERT INTO `tbl_sms_promotional_logs_ClubM_apr25` (transaction_id, message_id, mobileNo, sender, text, 
+        type, length, cost, status, cause, channel_name, submit_time, 
+        delivered_time, ip, entity_id, template_id, source, product, circle)
+        SELECT transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, product, circle 
+        FROM `dummy_CM_LB_23_04_2025_1930` dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_sms_promotional_logs_ClubM_apr25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T05:21:24.790Z] DND table insert query: 
+        INSERT INTO `dnd_ClubM` (mobileNo, status, date)
+        SELECT mobileNo, cause, submit_time
+        FROM `dummy_CM_LB_23_04_2025_1930` 
+        WHERE cause LIKE '%blocked in preferences with msisdn as pk.%' 
+        OR cause LIKE '%reserved for preference%' OR cause LIKE '%NCPR Fail%'
+     
+[2025-05-12T05:21:24.794Z] Error inserting data into product table: Error: Data truncated for column 'date' at row 1
+[2025-05-12T05:21:24.794Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_apr25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_LB_23_04_2025_1930`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_apr25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T05:21:24.812Z] Table dropped successfully: dummy_CM_LB_23_04_2025_1930
+[2025-05-12T05:30:30.698Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T05:30:30.707Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T05:30:44.918Z] transactionId: 8139014518858532050
+[2025-05-12T05:30:44.939Z] Dummy table create query: 
+      CREATE TABLE IF NOT EXISTS  `dummy_CM_LB_23_04_2025_1930` (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        client varchar(80),
+        product varchar(80),
+        base varchar(50),
+        circle varchar(30),
+        vendor varchar(15),
+        channel varchar(10)
+      )
+[2025-05-12T05:30:44.970Z] Log table name after creation: tbl_sms_promotional_logs_ClubM_apr25
+[2025-05-12T05:30:45.002Z] DND table name after creation: dnd_ClubM
+[2025-05-12T05:30:45.020Z] Product table Name after creation: ClubM_Mumbi_rcs_sms_cmp_done_apr25
+[2025-05-12T05:30:45.036Z] Final Table created: tbl_pm_promotions_logs_apr25
+[2025-05-12T05:30:45.053Z] Index added on column: mobileNo
+[2025-05-12T05:30:45.064Z] Index added on column: source
+[2025-05-12T05:30:45.076Z] Index added on column: vendor
+[2025-05-12T05:30:45.090Z] Index added on column: product
+[2025-05-12T05:30:45.106Z] Index added on column: channel
+[2025-05-12T05:30:45.123Z] Index added on column: client
+[2025-05-12T05:30:45.130Z] All values: 8139014518858532050,MgQQXSoPXMhVVSR,918902444879,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,34,34,UI,2025-04-01 11:34:18,2025-04-01 12:34:32,,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms,8139014518858532050,MgQQXSoPXMhVVST,918902444878,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,0,0,UI,2025-04-01 11:34:18,2025-04-01 12:34:32,,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms,8139014518858532050,MgQQXSoPXMhVVSU,918902444877,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,21,21,UI,2025-04-01 11:34:18,2025-04-01 12:34:32,,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms,8139014518858532050,MgQQXSoPXMhVVSP,918902444876,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,652,652,UI,2025-04-01 11:34:18,2025-04-01 12:34:32,,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms,8139014518858532050,MgQQXSoPXMhVVSO,918902444875,CLUBMH,Your next holiday awaits! Join Club Mahindra & enjoy a FREE stay in Maldives (3N/4D) or Dubai (4N/5D).Click here https://qt.ltd/CLUBMH/UVDgWX T&Cs apply,text,152,1,30,30,UI,2025-04-01 11:34:18,2025-04-01 12:34:32,,1101618950000010867,1307173408032234518,CM_LB_23_04_2025_1930,Club Mahindra Dentsu,Extraordinary experiences,test,NA,Setup 8,sms
+[2025-05-12T05:30:45.136Z] Data inserted into dummy table successfully: 
+      INSERT INTO  `dummy_CM_LB_23_04_2025_1930` 
+      (transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, client, product, base, circle, vendor, channel) 
+      VALUES ?
+    
+[2025-05-12T05:30:45.136Z] Update Query:  
+        update `sgc_msg_log`.`dummy_CM_LB_23_04_2025_1930` as base , `sgc_msg_log`.region_all  as regin set  base.circle=regin.circle where substr(base.mobileNo,3,4)=regin.series
+    
+[2025-05-12T05:30:45.143Z] Batch update result: {"fieldCount":0,"affectedRows":5,"insertId":0,"info":"Rows matched: 5  Changed: 5  Warnings: 0","serverStatus":34,"warningStatus":0,"changedRows":5}
+[2025-05-12T05:30:45.148Z] Log table insert query: 
+        INSERT INTO `tbl_sms_promotional_logs_ClubM_apr25` (transaction_id, message_id, mobileNo, sender, text, 
+        type, length, cost, status, cause, channel_name, submit_time, 
+        delivered_time, ip, entity_id, template_id, source, product, circle)
+        SELECT transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, product, circle 
+        FROM `dummy_CM_LB_23_04_2025_1930` dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_sms_promotional_logs_ClubM_apr25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T05:30:45.153Z] DND table insert query: 
+        INSERT INTO `dnd_ClubM` (mobileNo, status, date)
+        SELECT mobileNo, cause, submit_time
+        FROM `dummy_CM_LB_23_04_2025_1930` 
+        WHERE cause LIKE '%blocked in preferences with msisdn as pk.%' 
+        OR cause LIKE '%reserved for preference%' OR cause LIKE '%NCPR Fail%'
+     
+[2025-05-12T05:30:45.158Z] Data inserted into product table successfully: 
+        INSERT INTO `ClubM_Mumbi_rcs_sms_cmp_done_apr25` (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+        SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+        FROM `sgc_msg_log`.`dummy_CM_LB_23_04_2025_1930`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `ClubM_Mumbi_rcs_sms_cmp_done_apr25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T05:30:45.158Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_apr25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_LB_23_04_2025_1930`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_apr25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T05:30:45.173Z] Table dropped successfully: dummy_CM_LB_23_04_2025_1930
+[2025-05-12T06:01:55.733Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T06:01:55.744Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T06:02:22.238Z] Log table name after creation: tbl_sms_promotional_logs_ClubM_may25
+[2025-05-12T06:02:22.242Z] DND table name after creation: dnd_ClubM
+[2025-05-12T06:02:22.245Z] Product table Name after creation: ClubM_Mumbi_rcs_sms_cmp_done_may25
+[2025-05-12T06:02:22.247Z] Final Table created: tbl_pm_promotions_logs_may25
+[2025-05-12T06:02:22.978Z] Executing Duplicate Query: SELECT COUNT(*) AS count FROM `tbl_sms_promotional_logs_ClubM_may25` WHERE source = ? | Source: CM_LB_Guj_11_05_25
+[2025-05-12T06:02:22.978Z] duplicate data: [
+  {
+    "count": 0
+  }
+]
+[2025-05-12T06:02:23.006Z] Dummy table create query: 
+      CREATE TABLE IF NOT EXISTS  `dummy_CM_LB_Guj_11_05_25` (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        client varchar(80),
+        product varchar(80),
+        base varchar(50),
+        circle varchar(30),
+        vendor varchar(15),
+        channel varchar(10)
+      )
+[2025-05-12T06:02:24.933Z] Data inserted into dummy table successfully: 
+      INSERT INTO  `dummy_CM_LB_Guj_11_05_25` 
+      (transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, client, product, base, circle, vendor, channel) 
+      VALUES ?
+    
+[2025-05-12T06:02:24.933Z] Update Query:  
+        update `sgc_msg_log`.`dummy_CM_LB_Guj_11_05_25` as base , `sgc_msg_log`.region_all  as regin set  base.circle=regin.circle where substr(base.mobileNo,3,4)=regin.series
+    
+[2025-05-12T06:02:27.784Z] Log table insert query: 
+        INSERT INTO `tbl_sms_promotional_logs_ClubM_may25` (transaction_id, message_id, mobileNo, sender, text, 
+        type, length, cost, status, cause, channel_name, submit_time, 
+        delivered_time, ip, entity_id, template_id, source, product, circle)
+        SELECT transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, product, circle 
+        FROM `dummy_CM_LB_Guj_11_05_25` dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_sms_promotional_logs_ClubM_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T06:02:27.824Z] DND table insert query: 
+        INSERT INTO `dnd_ClubM` (mobileNo, status, date)
+        SELECT mobileNo, cause, submit_time
+        FROM `dummy_CM_LB_Guj_11_05_25` 
+        WHERE cause LIKE '%blocked in preferences with msisdn as pk.%' 
+        OR cause LIKE '%reserved for preference%' OR cause LIKE '%NCPR Fail%'
+     
+[2025-05-12T06:02:28.973Z] Data inserted into product table successfully: 
+        INSERT INTO `ClubM_Mumbi_rcs_sms_cmp_done_may25` (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+        SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+        FROM `sgc_msg_log`.`dummy_CM_LB_Guj_11_05_25`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `ClubM_Mumbi_rcs_sms_cmp_done_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T06:02:28.974Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_may25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_LB_Guj_11_05_25`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T06:02:32.229Z] Table dropped successfully: dummy_CM_LB_Guj_11_05_25
+[2025-05-12T06:02:32.232Z] isDuplicateFiles: false
+[2025-05-12T06:03:04.980Z] Log table name after creation: tbl_sms_promotional_logs_ClubM_may25
+[2025-05-12T06:03:04.982Z] DND table name after creation: dnd_ClubM
+[2025-05-12T06:03:04.985Z] Product table Name after creation: ClubM_Mumbi_rcs_sms_cmp_done_may25
+[2025-05-12T06:03:04.987Z] Final Table created: tbl_pm_promotions_logs_may25
+[2025-05-12T06:03:05.646Z] Executing Duplicate Query: SELECT COUNT(*) AS count FROM `tbl_sms_promotional_logs_ClubM_may25` WHERE source = ? | Source: CM_SMSMX_LB_11_05_2025__20%
+[2025-05-12T06:03:05.647Z] duplicate data: [
+  {
+    "count": 0
+  }
+]
+[2025-05-12T06:03:05.687Z] Dummy table create query: 
+      CREATE TABLE IF NOT EXISTS  `dummy_CM_SMSMX_LB_11_05_2025__20%` (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        client varchar(80),
+        product varchar(80),
+        base varchar(50),
+        circle varchar(30),
+        vendor varchar(15),
+        channel varchar(10)
+      )
+[2025-05-12T06:03:06.104Z] Data inserted into dummy table successfully: 
+      INSERT INTO  `dummy_CM_SMSMX_LB_11_05_2025__20%` 
+      (transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, client, product, base, circle, vendor, channel) 
+      VALUES ?
+    
+[2025-05-12T06:03:06.105Z] Update Query:  
+        update `sgc_msg_log`.`dummy_CM_SMSMX_LB_11_05_2025__20%` as base , `sgc_msg_log`.region_all  as regin set  base.circle=regin.circle where substr(base.mobileNo,3,4)=regin.series
+    
+[2025-05-12T06:03:07.661Z] Log table insert query: 
+        INSERT INTO `tbl_sms_promotional_logs_ClubM_may25` (transaction_id, message_id, mobileNo, sender, text, 
+        type, length, cost, status, cause, channel_name, submit_time, 
+        delivered_time, ip, entity_id, template_id, source, product, circle)
+        SELECT transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, product, circle 
+        FROM `dummy_CM_SMSMX_LB_11_05_2025__20%` dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_sms_promotional_logs_ClubM_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T06:03:07.672Z] DND table insert query: 
+        INSERT INTO `dnd_ClubM` (mobileNo, status, date)
+        SELECT mobileNo, cause, submit_time
+        FROM `dummy_CM_SMSMX_LB_11_05_2025__20%` 
+        WHERE cause LIKE '%blocked in preferences with msisdn as pk.%' 
+        OR cause LIKE '%reserved for preference%' OR cause LIKE '%NCPR Fail%'
+     
+[2025-05-12T06:03:08.389Z] Data inserted into product table successfully: 
+        INSERT INTO `ClubM_Mumbi_rcs_sms_cmp_done_may25` (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+        SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_11_05_2025__20%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `ClubM_Mumbi_rcs_sms_cmp_done_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T06:03:08.390Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_may25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_11_05_2025__20%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T06:03:09.300Z] Table dropped successfully: dummy_CM_SMSMX_LB_11_05_2025__20%
+[2025-05-12T06:03:09.604Z] Log table name after creation: tbl_sms_promotional_logs_ClubM_may25
+[2025-05-12T06:03:09.605Z] DND table name after creation: dnd_ClubM
+[2025-05-12T06:03:09.608Z] Product table Name after creation: ClubM_Mumbi_rcs_sms_cmp_done_may25
+[2025-05-12T06:03:09.609Z] Final Table created: tbl_pm_promotions_logs_may25
+[2025-05-12T06:03:10.267Z] Executing Duplicate Query: SELECT COUNT(*) AS count FROM `tbl_sms_promotional_logs_ClubM_may25` WHERE source = ? | Source: CM_SMSMX_LB_11_05_2025_80%
+[2025-05-12T06:03:10.268Z] duplicate data: [
+  {
+    "count": 0
+  }
+]
+[2025-05-12T06:03:10.305Z] Dummy table create query: 
+      CREATE TABLE IF NOT EXISTS  `dummy_CM_SMSMX_LB_11_05_2025_80%` (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        client varchar(80),
+        product varchar(80),
+        base varchar(50),
+        circle varchar(30),
+        vendor varchar(15),
+        channel varchar(10)
+      )
+[2025-05-12T06:03:11.678Z] Data inserted into dummy table successfully: 
+      INSERT INTO  `dummy_CM_SMSMX_LB_11_05_2025_80%` 
+      (transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, client, product, base, circle, vendor, channel) 
+      VALUES ?
+    
+[2025-05-12T06:03:11.678Z] Update Query:  
+        update `sgc_msg_log`.`dummy_CM_SMSMX_LB_11_05_2025_80%` as base , `sgc_msg_log`.region_all  as regin set  base.circle=regin.circle where substr(base.mobileNo,3,4)=regin.series
+    
+[2025-05-12T06:03:14.284Z] Log table insert query: 
+        INSERT INTO `tbl_sms_promotional_logs_ClubM_may25` (transaction_id, message_id, mobileNo, sender, text, 
+        type, length, cost, status, cause, channel_name, submit_time, 
+        delivered_time, ip, entity_id, template_id, source, product, circle)
+        SELECT transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, product, circle 
+        FROM `dummy_CM_SMSMX_LB_11_05_2025_80%` dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_sms_promotional_logs_ClubM_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T06:03:14.355Z] DND table insert query: 
+        INSERT INTO `dnd_ClubM` (mobileNo, status, date)
+        SELECT mobileNo, cause, submit_time
+        FROM `dummy_CM_SMSMX_LB_11_05_2025_80%` 
+        WHERE cause LIKE '%blocked in preferences with msisdn as pk.%' 
+        OR cause LIKE '%reserved for preference%' OR cause LIKE '%NCPR Fail%'
+     
+[2025-05-12T06:03:15.450Z] Data inserted into product table successfully: 
+        INSERT INTO `ClubM_Mumbi_rcs_sms_cmp_done_may25` (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+        SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_11_05_2025_80%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `ClubM_Mumbi_rcs_sms_cmp_done_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T06:03:15.451Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_may25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_11_05_2025_80%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T06:03:18.091Z] Data inserted into product table successfully: 
+        INSERT INTO `ClubM_Mumbi_rcs_sms_cmp_done_may25` (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+        SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_11_05_2025_80%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `ClubM_Mumbi_rcs_sms_cmp_done_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T06:03:18.091Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_may25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_11_05_2025_80%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T06:03:18.694Z] Table dropped successfully: dummy_CM_SMSMX_LB_11_05_2025_80%
+[2025-05-12T06:03:18.696Z] isDuplicateFiles: false
+[2025-05-12T06:03:23.128Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T06:03:23.142Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T06:06:06.260Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T06:06:06.262Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T06:06:07.987Z] sender Name: , , , , , , , , 
+[2025-05-12T06:06:07.994Z] sender Name: , , , , , , , , 
+[2025-05-12T07:03:22.228Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:03:22.243Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:03:23.668Z] sender Name: , , , , , , , , 
+[2025-05-12T07:03:23.672Z] sender Name: , , , , , , , , 
+[2025-05-12T07:05:17.837Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:05:17.855Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:05:18.851Z] sender Name: , , , , , , , , 
+[2025-05-12T07:05:18.855Z] sender Name: , , , , , , , , 
+[2025-05-12T07:06:34.731Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:06:34.740Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:06:35.424Z] sender Name: , , , , , , , , 
+[2025-05-12T07:06:35.427Z] sender Name: , , , , , , , , 
+[2025-05-12T07:12:23.879Z] sender Name: , , , , , , , , 
+[2025-05-12T07:20:14.647Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:20:14.662Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:20:15.674Z] sender Name: , , , , , , , , 
+[2025-05-12T07:20:15.681Z] sender Name: , , , , , , , , 
+[2025-05-12T07:38:33.718Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:38:33.723Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:39:26.934Z] Log table name after creation: tbl_sms_promotional_logs_ClubM_may25
+[2025-05-12T07:39:26.937Z] DND table name after creation: dnd_ClubM
+[2025-05-12T07:39:26.941Z] Product table Name after creation: ClubM_Mumbi_rcs_sms_cmp_done_may25
+[2025-05-12T07:39:26.943Z] Final Table created: tbl_pm_promotions_logs_may25
+[2025-05-12T07:39:27.485Z] Executing Duplicate Query: SELECT COUNT(*) AS count FROM `tbl_sms_promotional_logs_ClubM_may25` WHERE source = ? | Source: CM_LB_Guj_12_05_25
+[2025-05-12T07:39:27.486Z] duplicate data: [
+  {
+    "count": 0
+  }
+]
+[2025-05-12T07:39:27.551Z] Dummy table create query: 
+      CREATE TABLE IF NOT EXISTS  `dummy_CM_LB_Guj_12_05_25` (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        client varchar(80),
+        product varchar(80),
+        base varchar(50),
+        circle varchar(30),
+        vendor varchar(15),
+        channel varchar(10)
+      )
+[2025-05-12T07:39:29.007Z] Data inserted into dummy table successfully: 
+      INSERT INTO  `dummy_CM_LB_Guj_12_05_25` 
+      (transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, client, product, base, circle, vendor, channel) 
+      VALUES ?
+    
+[2025-05-12T07:39:29.007Z] Update Query:  
+        update `sgc_msg_log`.`dummy_CM_LB_Guj_12_05_25` as base , `sgc_msg_log`.region_all  as regin set  base.circle=regin.circle where substr(base.mobileNo,3,4)=regin.series
+    
+[2025-05-12T07:39:31.704Z] Log table insert query: 
+        INSERT INTO `tbl_sms_promotional_logs_ClubM_may25` (transaction_id, message_id, mobileNo, sender, text, 
+        type, length, cost, status, cause, channel_name, submit_time, 
+        delivered_time, ip, entity_id, template_id, source, product, circle)
+        SELECT transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, product, circle 
+        FROM `dummy_CM_LB_Guj_12_05_25` dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_sms_promotional_logs_ClubM_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T07:39:31.735Z] DND table insert query: 
+        INSERT INTO `dnd_ClubM` (mobileNo, status, date)
+        SELECT mobileNo, cause, submit_time
+        FROM `dummy_CM_LB_Guj_12_05_25` 
+        WHERE cause LIKE '%blocked in preferences with msisdn as pk.%' 
+        OR cause LIKE '%reserved for preference%' OR cause LIKE '%NCPR Fail%'
+     
+[2025-05-12T07:39:32.733Z] Data inserted into product table successfully: 
+        INSERT INTO `ClubM_Mumbi_rcs_sms_cmp_done_may25` (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+        SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+        FROM `sgc_msg_log`.`dummy_CM_LB_Guj_12_05_25`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `ClubM_Mumbi_rcs_sms_cmp_done_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T07:39:32.733Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_may25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_LB_Guj_12_05_25`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T07:39:35.078Z] Table dropped successfully: dummy_CM_LB_Guj_12_05_25
+[2025-05-12T07:39:35.082Z] isDuplicateFiles: false
+[2025-05-12T07:39:57.541Z] Log table name after creation: tbl_sms_promotional_logs_ClubM_may25
+[2025-05-12T07:39:57.543Z] DND table name after creation: dnd_ClubM
+[2025-05-12T07:39:57.547Z] Product table Name after creation: ClubM_Mumbi_rcs_sms_cmp_done_may25
+[2025-05-12T07:39:57.549Z] Final Table created: tbl_pm_promotions_logs_may25
+[2025-05-12T07:39:58.270Z] Executing Duplicate Query: SELECT COUNT(*) AS count FROM `tbl_sms_promotional_logs_ClubM_may25` WHERE source = ? | Source: CM_SMSMX_LB_12_05_2025__20%
+[2025-05-12T07:39:58.270Z] duplicate data: [
+  {
+    "count": 0
+  }
+]
+[2025-05-12T07:39:58.307Z] Dummy table create query: 
+      CREATE TABLE IF NOT EXISTS  `dummy_CM_SMSMX_LB_12_05_2025__20%` (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        client varchar(80),
+        product varchar(80),
+        base varchar(50),
+        circle varchar(30),
+        vendor varchar(15),
+        channel varchar(10)
+      )
+[2025-05-12T07:39:58.589Z] Data inserted into dummy table successfully: 
+      INSERT INTO  `dummy_CM_SMSMX_LB_12_05_2025__20%` 
+      (transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, client, product, base, circle, vendor, channel) 
+      VALUES ?
+    
+[2025-05-12T07:39:58.590Z] Update Query:  
+        update `sgc_msg_log`.`dummy_CM_SMSMX_LB_12_05_2025__20%` as base , `sgc_msg_log`.region_all  as regin set  base.circle=regin.circle where substr(base.mobileNo,3,4)=regin.series
+    
+[2025-05-12T07:40:00.303Z] Log table insert query: 
+        INSERT INTO `tbl_sms_promotional_logs_ClubM_may25` (transaction_id, message_id, mobileNo, sender, text, 
+        type, length, cost, status, cause, channel_name, submit_time, 
+        delivered_time, ip, entity_id, template_id, source, product, circle)
+        SELECT transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, product, circle 
+        FROM `dummy_CM_SMSMX_LB_12_05_2025__20%` dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_sms_promotional_logs_ClubM_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T07:40:00.315Z] DND table insert query: 
+        INSERT INTO `dnd_ClubM` (mobileNo, status, date)
+        SELECT mobileNo, cause, submit_time
+        FROM `dummy_CM_SMSMX_LB_12_05_2025__20%` 
+        WHERE cause LIKE '%blocked in preferences with msisdn as pk.%' 
+        OR cause LIKE '%reserved for preference%' OR cause LIKE '%NCPR Fail%'
+     
+[2025-05-12T07:40:01.307Z] Data inserted into product table successfully: 
+        INSERT INTO `ClubM_Mumbi_rcs_sms_cmp_done_may25` (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+        SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_12_05_2025__20%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `ClubM_Mumbi_rcs_sms_cmp_done_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T07:40:01.307Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_may25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_12_05_2025__20%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T07:40:02.600Z] Table dropped successfully: dummy_CM_SMSMX_LB_12_05_2025__20%
+[2025-05-12T07:40:03.043Z] Log table name after creation: tbl_sms_promotional_logs_ClubM_may25
+[2025-05-12T07:40:03.045Z] DND table name after creation: dnd_ClubM
+[2025-05-12T07:40:03.047Z] Product table Name after creation: ClubM_Mumbi_rcs_sms_cmp_done_may25
+[2025-05-12T07:40:03.050Z] Final Table created: tbl_pm_promotions_logs_may25
+[2025-05-12T07:40:03.938Z] Executing Duplicate Query: SELECT COUNT(*) AS count FROM `tbl_sms_promotional_logs_ClubM_may25` WHERE source = ? | Source: CM_SMSMX_LB_12_05_2025__80%
+[2025-05-12T07:40:03.938Z] duplicate data: [
+  {
+    "count": 0
+  }
+]
+[2025-05-12T07:40:03.969Z] Dummy table create query: 
+      CREATE TABLE IF NOT EXISTS  `dummy_CM_SMSMX_LB_12_05_2025__80%` (
+        transaction_id VARCHAR(20),
+        message_id VARCHAR(20),
+        mobileNo VARCHAR(12),
+        sender VARCHAR(10),
+        text TEXT,
+        type VARCHAR(10),
+        length varchar(5),
+        cost varchar(2),
+        status VARCHAR(15),
+        cause varchar(50),
+        channel_name VARCHAR(20),
+        submit_time varchar(30),
+        delivered_time varchar(30),
+        ip VARCHAR(10),
+        entity_id VARCHAR(20),
+        template_id VARCHAR(20),
+        source VARCHAR(50),
+        client varchar(80),
+        product varchar(80),
+        base varchar(50),
+        circle varchar(30),
+        vendor varchar(15),
+        channel varchar(10)
+      )
+[2025-05-12T07:40:05.406Z] Data inserted into dummy table successfully: 
+      INSERT INTO  `dummy_CM_SMSMX_LB_12_05_2025__80%` 
+      (transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, client, product, base, circle, vendor, channel) 
+      VALUES ?
+    
+[2025-05-12T07:40:05.407Z] Update Query:  
+        update `sgc_msg_log`.`dummy_CM_SMSMX_LB_12_05_2025__80%` as base , `sgc_msg_log`.region_all  as regin set  base.circle=regin.circle where substr(base.mobileNo,3,4)=regin.series
+    
+[2025-05-12T07:40:08.775Z] Log table insert query: 
+        INSERT INTO `tbl_sms_promotional_logs_ClubM_may25` (transaction_id, message_id, mobileNo, sender, text, 
+        type, length, cost, status, cause, channel_name, submit_time, 
+        delivered_time, ip, entity_id, template_id, source, product, circle)
+        SELECT transaction_id, message_id, mobileNo, sender, text, type, length, cost, status, cause, channel_name, submit_time, delivered_time, ip, entity_id, template_id, source, product, circle 
+        FROM `dummy_CM_SMSMX_LB_12_05_2025__80%` dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_sms_promotional_logs_ClubM_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T07:40:08.799Z] DND table insert query: 
+        INSERT INTO `dnd_ClubM` (mobileNo, status, date)
+        SELECT mobileNo, cause, submit_time
+        FROM `dummy_CM_SMSMX_LB_12_05_2025__80%` 
+        WHERE cause LIKE '%blocked in preferences with msisdn as pk.%' 
+        OR cause LIKE '%reserved for preference%' OR cause LIKE '%NCPR Fail%'
+     
+[2025-05-12T07:40:10.028Z] Data inserted into product table successfully: 
+        INSERT INTO `ClubM_Mumbi_rcs_sms_cmp_done_may25` (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+        SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_12_05_2025__80%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `ClubM_Mumbi_rcs_sms_cmp_done_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T07:40:10.029Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_may25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_12_05_2025__80%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T07:40:13.394Z] Data inserted into product table successfully: 
+        INSERT INTO `ClubM_Mumbi_rcs_sms_cmp_done_may25` (mobileNo, date, channel , sender, circle, vendor, product, source, status, client, base, cause) 
+        SELECT mobileNo, submit_time, channel , sender, circle, vendor, product, source, status, client, base, cause
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_12_05_2025__80%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `ClubM_Mumbi_rcs_sms_cmp_done_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+     
+[2025-05-12T07:40:13.395Z] Product to final table insert query: 
+        INSERT INTO `tbl_pm_promotions_logs_may25` (mobileNo, circle, vendor, status, product, date, source, channel, cause, sender, client)
+        SELECT dt.mobileNo, dt.circle, dt.vendor, dt.status, dt.product, dt.delivered_time, dt.source, dt.channel, dt.cause, dt.sender, dt.client
+        FROM `sgc_msg_log`.`dummy_CM_SMSMX_LB_12_05_2025__80%`  dt
+        WHERE NOT EXISTS (
+            SELECT 1 FROM `tbl_pm_promotions_logs_may25` ft 
+            WHERE ft.source = dt.source 
+            LIMIT 1
+        )
+    
+[2025-05-12T07:40:14.113Z] Table dropped successfully: dummy_CM_SMSMX_LB_12_05_2025__80%
+[2025-05-12T07:40:14.115Z] isDuplicateFiles: false
+[2025-05-12T07:41:07.802Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:41:07.807Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:41:13.559Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:41:13.566Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:42:54.275Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:42:54.282Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:45:01.867Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:45:01.878Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:45:54.464Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:45:54.472Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:46:20.668Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:46:20.681Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:48:26.970Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:48:26.979Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:49:31.770Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:49:31.779Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:51:03.055Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T07:51:03.061Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:12:58.785Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:12:58.789Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:17:51.552Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:17:51.568Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:17:55.198Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:17:55.215Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:19:05.123Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:19:05.134Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:25:51.071Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:25:51.078Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:31:51.427Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:31:51.430Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:32:37.370Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:32:37.375Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:40:25.811Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:40:25.818Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:40:37.534Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:40:37.540Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T09:54:39.800Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T10:17:26.673Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T10:17:26.689Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T10:18:26.569Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T10:18:26.580Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T10:19:03.275Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T10:19:03.279Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T10:29:09.829Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T10:29:15.367Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T10:29:15.378Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:10:20.048Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:10:20.052Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:28:17.816Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:28:17.821Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:30:05.987Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:30:05.991Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:30:08.962Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:30:08.978Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:30:47.578Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:30:47.583Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:37:29.254Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:37:29.257Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:38:57.447Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:38:57.450Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:53:09.264Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:53:09.268Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:54:46.352Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T11:54:46.356Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:03:32.893Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:03:32.896Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:12:56.719Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:12:56.721Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:13:00.619Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:13:00.623Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:13:32.588Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:13:32.592Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:46:03.282Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny
+[2025-05-12T12:46:03.285Z] Clients Name: Cars24, Cars24, Cars24, Hiranandani, Bajaj Housing Finance Limited, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Club Mahindra Dentsu, Spinny

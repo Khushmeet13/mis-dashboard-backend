@@ -1,0 +1,149 @@
+router.get("/files/csv", async (req, res) => {
+    try {
+        const { fromDate, toDate, senderName } = req.query;
+
+        if (!senderName) {
+            return res.status(400).json({ error: "Sender name is required" });
+        }
+
+        function getMonthYearPairs(fromDate, toDate) {
+            const startDate = new Date(fromDate);
+            const endDate = new Date(toDate);
+            const monthYearPairs = new Set();
+
+            while (startDate <= endDate) {
+                const year = startDate.getFullYear();
+                const shortYear = year.toString().slice(-2);
+                const month = String(startDate.getMonth() + 1).padStart(2, "0");
+                const monthNames = new Date(year, month - 1).toLocaleString('en-US', { month: 'short' }).toLowerCase();
+                monthYearPairs.add(`${monthNames}${shortYear}`);
+                startDate.setMonth(startDate.getMonth() + 1);
+            }
+
+            return Array.from(monthYearPairs);
+        }
+
+        const monthYear = getMonthYearPairs(fromDate, toDate);
+        const [rows] = await db.query("SELECT mapping FROM product_mapping WHERE sender = ?", [senderName]);
+
+        const formattedSenderName = rows.length > 0 ? rows[0].mapping : senderName.replace(/\s+/g, "_");
+        const dndFormattedSenderName = rows.length > 0 ? rows[0].mapping : senderName.replace(/\s+/g, "_");
+
+        const tableName = `tbl_sms_promotional_logs_${formattedSenderName}_${monthYear}`;
+        const dndTableName = `dnd_${dndFormattedSenderName}`;
+
+        const checkTableQuery = `SHOW TABLES LIKE ?`;
+        const [tableExists] = await db.query(checkTableQuery, [tableName]);
+        const [dndTableExists] = await db.query("SHOW TABLES LIKE ?", [dndTableName]);
+
+        if (tableExists.length === 0) {
+            return res.status(404).json({ message: `Table '${tableName}' does not exist` });
+        }
+
+      
+        let query = `
+        SELECT 
+            CASE 
+                WHEN source LIKE '%CM_LB%' THEN 'LB'
+                WHEN source LIKE '%CM_LH%' THEN 'LH'
+                WHEN source LIKE '%CM_MX%' THEN 'MX'
+                WHEN source LIKE '%HN_%' THEN 'HN'
+                ELSE 'OTHERS'
+            END AS product_key,
+            circle,
+            SUBSTRING_INDEX(source, '.', 1) AS source, 
+            SUBSTR(submit_time, 1, 16) AS date, 
+            DATE(submit_time) AS submitted_date, 
+            sender as product_name,
+            count(Status) as submitted_count, 
+            SUM(CASE WHEN Status IN ('Delivered', '000', '0') THEN 1 ELSE 0 END) AS delivered_count,
+            SUM(CASE WHEN Cause = 'NCPR Fail' THEN 1 ELSE 0 END) AS notsent_count,
+            SUM(CASE WHEN cause NOT IN ('Delivered', '000', '0', 'NCPR Fail') THEN 1 ELSE 0 END) AS failed_count
+        FROM ${tableName}
+        WHERE sender = ?`;
+
+        const params = [senderName];
+
+        if (fromDate && toDate) {
+            query += ` AND DATE(submit_time) BETWEEN ? AND ? `;
+            params.push(fromDate, toDate);
+        } else if (fromDate) {
+            query += ` AND DATE(submit_time) = ? `;
+            params.push(fromDate);
+        } else if (toDate) {
+            query += ` AND DATE(submit_time) = ? `;
+            params.push(toDate);
+        }
+
+        query += " GROUP BY source, circle, date, DATE(Submit_Time) ORDER BY source ASC";
+        console.log("Required query:", query);
+
+        const [results] = await db.query(query, params);
+        logToFile(`Query1 inside files csv: ${query}`);
+        logToFile(`Query1 result inside files csv: ${JSON.stringify(results)}`);
+
+       
+        let query2 = `
+        SELECT 
+            source_group,
+            SUM(submitted_count) AS total_submitted,
+            SUM(delivered_count) AS total_delivered,
+            SUM(notsent_count) AS total_notsent,
+            SUM(failed_count) AS total_failed
+        FROM (
+            SELECT 
+                SUBSTRING_INDEX(source, '_', 2) AS source_group,
+                COUNT(Status) AS submitted_count,
+                SUM(CASE WHEN Status IN ('Delivered', '000', '0') THEN 1 ELSE 0 END) AS delivered_count,
+                SUM(CASE WHEN Cause = 'NCPR Fail' THEN 1 ELSE 0 END) AS notsent_count,
+                SUM(CASE WHEN Cause NOT IN ('Delivered', '000', '0', 'NCPR Fail') THEN 1 ELSE 0 END) AS failed_count
+            FROM ${tableName}
+            WHERE sender = ? AND DATE(submit_time) BETWEEN ? AND ? 
+            GROUP BY SUBSTRING_INDEX(source, '_', 2)
+        ) AS sub 
+        GROUP BY source_group`;
+
+        console.log("Required query:", query2);
+        const [result2] = await db.query(query2, [senderName, fromDate, toDate]);
+        logToFile(`Query2 inside files csv: ${query2}`);
+        logToFile(`Query2 result inside files csv: ${JSON.stringify(result2)}`);
+
+        // --- DND Query ---
+        let dndResults = [];
+        if (dndTableExists.length > 0) {
+            const dndQuery = `
+                SELECT SUBSTRING_INDEX(source, '.', 1) AS source, cause , COUNT(*) AS total_failed 
+                FROM ${tableName} 
+                WHERE Status != 'delivered' 
+                GROUP by cause, source`;
+
+            [dndResults] = await db.query(dndQuery);
+        }
+
+     
+        let query3 = `
+            SELECT cause , COUNT(*) AS total_failed 
+            FROM ${tableName} 
+            WHERE DATE(submit_time) BETWEEN ? AND ?
+            GROUP BY cause
+            ORDER BY total_failed DESC`;
+
+        const [result3] = await db.query(query3, [fromDate, toDate]);
+
+        console.log("Dnd result:", dndResults);
+        console.log("Query Results:", results);
+
+        
+        res.json({
+            promotionalData: results,
+            dndData: dndResults,
+            failedData: result3,
+            totalData: result2
+        });
+
+    } catch (error) {
+        console.error("Error in /files/csv route:", error);
+        logToFile(`Error in /files/csv route: ${error.message}`);
+        res.status(500).json({ error: "Internal server error", details: error.message });
+    }
+});

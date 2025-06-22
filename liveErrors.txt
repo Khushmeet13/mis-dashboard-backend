@@ -1,0 +1,7 @@
+--------30/4/2025---------
+cors issue arised
+resolve process ---
+router.use(cors({
+    origin: true,
+    credentials: true
+}));
