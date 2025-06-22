@@ -1,8 +1,8 @@
 // testTelegram.js
 const axios = require('axios');
 
-const BOT_TOKEN = '7811521792:AAHvgJxtalJtQBFqHn71KHj6vUM1yL4nnrE';
-const CHAT_ID = '6662566183';
+const BOT_TOKEN = process.env.REACT_APP_TELEGRAM_BOT_TOKEN;
+const CHAT_ID = process.env.REACT_APP_TELEGRAM_CHAT_ID;
 
 axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
   chat_id: CHAT_ID,
