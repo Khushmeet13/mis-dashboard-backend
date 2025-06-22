@@ -2,21 +2,23 @@ const mysql = require("mysql2/promise");
 const fs = require("fs");
 
 const db = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "mysql",
-    database: "sgc_msg_log",
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
     multipleStatements: true,
-    localInfile: true,  
+    localInfile: true,
     streamFactory: (path) => fs.createReadStream(path)
 });
 
 
 const product_db = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "mysql",
-    database: "sgc_msg_log", 
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
     multipleStatements: true,
 });
 
@@ -24,7 +26,7 @@ const server_db = mysql.createPool({
     host: "localhost",
     user: "root",
     password: "mysql",
-    database: "Server13Logs", 
+    database: "Server13Logs",
     multipleStatements: true,
 });
 
@@ -37,15 +39,15 @@ async function testConnection() {
     try {
         const connection = await db.getConnection();
         console.log("Connected to MySQL db database");
-        connection.release(); 
+        connection.release();
 
         const productConnection = await product_db.getConnection();
         console.log("Connected to MySQL product database");
-        productConnection.release(); 
+        productConnection.release();
 
         const serverDbConnection = await server_db.getConnection();
         console.log("Connected to MySQL server database");
-        serverDbConnection.release(); 
+        serverDbConnection.release();
     } catch (err) {
         console.error("Database connection failed:", err);
     }
@@ -65,4 +67,4 @@ async function enableLocalInfile() {
 testConnection();
 enableLocalInfile();
 
-module.exports = { db, product_db, server_db, product_db_name, db_name, server_db_name};
+module.exports = { db, product_db, server_db, product_db_name, db_name, server_db_name };
